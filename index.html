@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/static/logo (3).png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovable | Character & Flames</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Nav -->
+    <header class="glass-header">
+        <div class="logo">
+            <span class="heart-icon">❤️</span> Lovable
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#character-section" class="active">Character</a></li>
+                <li><a href="#flames-section">Flames</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero / Character Section -->
+        <section id="character-section" class="hero-section">
+            <div class="content-wrapper">
+                <h1 class="title-gradient">Meet Your Match</h1>
+                <p class="subtitle">Generate a vivid, funny character profile instantly.</p>
+                
+                <div class="input-group">
+                    <input type="text" id="username-input" placeholder="Enter a username..." value="SparkleMuffin">
+                    <button id="generate-btn" class="primary-btn">Generate Profile</button>
+                </div>
+
+                <!-- Character Card Container -->
+                <div id="card-container" class="card-display-area">
+                    <!-- Card will be injected here via JS -->
+                    <div class="placeholder-card">
+                        <p>✨ Magic awaits... ✨</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flames Section -->
+        <section id="flames-section" class="flames-section">
+            <div class="content-wrapper">
+                <h2 class="section-title">🔥 The F.L.A.M.E.S Test 🔥</h2>
+                <p class="subtitle">Discover your destiny with our scientifically adorable calculator.</p>
+
+                <div class="flames-calculator glass-panel">
+                    <div class="flames-inputs">
+                        <div class="input-field">
+                            <label>Your Name</label>
+                            <input type="text" id="flames-name1" placeholder="Romeo">
+                        </div>
+                        <div class="flames-vs">❤️</div>
+                        <div class="input-field">
+                            <label>Crush's Name</label>
+                            <input type="text" id="flames-name2" placeholder="Juliet">
+                        </div>
+                    </div>
+                    <button id="calc-flames-btn" class="secondary-btn">Calculate Love</button>
+                    
+                    <div id="flames-result" class="flames-result hidden">
+                        <div class="result-icon">💌</div>
+                        <h3 id="result-text">Affection</h3>
+                        <p id="result-desc">Sweet and simple!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass-footer">
+        <p>Made with 💖 and ✨ by sarjan p</p>
+        <div class="social-links">
+            <a href="#">🐦</a>
+            <a href="#">📷</a>
+            <a href="#">🐙</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
